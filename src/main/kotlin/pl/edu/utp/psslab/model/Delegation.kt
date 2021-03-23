@@ -9,7 +9,7 @@ import javax.persistence.*
 class Delegation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var delegationId = 0
+    var delegationId : Long = 0
 
     @Column
     var description: String

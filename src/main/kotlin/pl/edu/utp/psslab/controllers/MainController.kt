@@ -38,6 +38,7 @@ constructor(
 
 
 
+
     @ResponseStatus
     @PutMapping("/user/changepassword")
     fun changePassword(
@@ -109,6 +110,8 @@ constructor(
         pageable: Pageable
     ) = delegationService.getAllDelegations(pageable)
 
+
+
     @GetMapping("/delegations/datestartdesc")
     fun getAllDelegationsOrderByDateStartDesc(pageable: Pageable) =
         delegationService.getAllDelegationsOrderByDateStartDesc(pageable)
@@ -129,6 +132,11 @@ constructor(
         @RequestParam(required = false, defaultValue = "0") size: Int,
         pageable: Pageable
     ) = userService.getAllUsersByRoleName(roleName, pageable)
+
+
+
+
+
 
 
 }
