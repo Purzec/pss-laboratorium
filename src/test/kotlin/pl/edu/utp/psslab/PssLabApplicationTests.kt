@@ -152,7 +152,7 @@ class PssLabApplicationTests {
 
         assert(result == HttpStatus.OK)
     }
-    @Test
+    /*@Test
     fun changeDelegation() {
         //when
         val delegation = DelegationDTO("wyjazd integracyjny", LocalDateTime.now(), LocalDateTime.now(), 50,
@@ -183,7 +183,7 @@ class PssLabApplicationTests {
 
 
     }
-
+*/
 
     @Test
     fun getAllDelegations()
